@@ -1,2 +1,2 @@
 # Tula-gingerbread
-Online store selling tula gingerbread
+Online store selling tula gingerbread.
