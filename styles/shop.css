@@ -3,11 +3,6 @@
   padding: 0;
 }
 
-@font-face {
-  font-family: "Segoe UI";
-  src: url(../fonts/Segoe\ UI.ttf);
-}
-
 html,
 body {
   height: 100%;
@@ -75,6 +70,29 @@ body {
   border-bottom: 2px solid black;
 }
 
+.main-content {
+  margin-top: 150px;
+  margin-bottom: 200px;
+}
+
+.main-title,
+.main-small-title {
+  font-family: "Lora";
+}
+
+.main-title {
+  padding-bottom: 50px;
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: 1.28px;
+}
+
+.main-small-title {
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 0.72px;
+}
+
 .header-scroll {
   background-color: white;
 }
@@ -96,6 +114,10 @@ body {
   width: 50px;
   height: 50px;
   margin-left: 20px;
+}
+
+#main {
+  padding-bottom: 200px;
 }
 
 .catalog {
@@ -131,6 +153,7 @@ body {
   font-size: 32px;
   font-weight: 700;
   letter-spacing: 0.64px;
+  font-family: "Inter", sans-serif;
 }
 
 .in-case {
@@ -149,4 +172,19 @@ body {
   background-color: #c2723a;
   color: white;
   transition: 0.3s ease-in-out;
+}
+
+footer {
+  border-top: 1px solid #000;
+  box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.footer-vk img {
+  width: 50px;
+}
+
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
