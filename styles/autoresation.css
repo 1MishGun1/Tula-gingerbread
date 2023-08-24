@@ -22,3 +22,54 @@ body {
   max-width: 1640px;
   margin: 0 auto;
 }
+
+#main.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-title {
+  font-family: Segoe UI;
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.login,
+.password {
+  width: 700px;
+  height: 60px;
+  border-radius: 15px;
+  border: 1px solid #000;
+  color: #8f8f8f;
+  font-family: Segoe UI;
+  font-size: 18px;
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+
+.enter {
+  width: 250px;
+  height: 60px;
+  border-radius: 15px;
+  border: 1px solid #000;
+  font-family: Segoe UI;
+  font-size: 24px;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+}
+
+.text-no-account {
+  font-family: Segoe UI;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.create-account {
+  font-family: Segoe UI;
+  font-size: 20px;
+  font-weight: 400;
+  color: #0019ff;
+  text-decoration: none;
+}
