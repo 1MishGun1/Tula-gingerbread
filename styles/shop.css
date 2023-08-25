@@ -78,6 +78,7 @@ body {
 .main-title,
 .main-small-title {
   font-family: "Lora";
+  text-transform: uppercase;
 }
 
 .main-title {
