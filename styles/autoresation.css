@@ -23,10 +23,11 @@ body {
   margin: 0 auto;
 }
 
-#main.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .main-title {
@@ -34,10 +35,10 @@ body {
   font-size: 32px;
   font-weight: 600;
   text-transform: uppercase;
+  margin-bottom: 60px;
 }
 
-.login,
-.password {
+.input-form input {
   width: 700px;
   height: 60px;
   border-radius: 15px;
@@ -47,6 +48,14 @@ body {
   font-size: 18px;
   padding-left: 20px;
   text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.enter {
+  font-family: Segoe UI;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.48px;
 }
 
 .enter {
@@ -58,6 +67,13 @@ body {
   font-size: 24px;
   letter-spacing: 0.48px;
   text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.text-account {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
 }
 
 .text-no-account {
