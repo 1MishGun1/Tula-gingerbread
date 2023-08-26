@@ -98,6 +98,7 @@ body {
   list-style: none;
   max-width: 1640px;
   margin: 0 auto;
+  padding-bottom: 40px;
 }
 
 .breadcrumb li + li:before {
@@ -118,4 +119,13 @@ body {
 
 .breadcrumb-item a:hover {
   border-bottom: 1px solid black;
+}
+
+.basket-title {
+  font-family: Lora;
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: 1.28px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
 }
