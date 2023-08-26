@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.scroll {
+  transition: 1.5s ease-in-out;
+}
+
+.scroll-active {
+  background-color: transparent;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: white;
+  color: black;
+}
+
+.header {
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 1640px;
+  margin: 0 auto;
+}
+
+.main-screen {
+  background-image: url(../img/main-2.png);
+  height: 100vh;
+  max-width: 100vw;
+  background-repeat: no-repeat;
+  overflow-y: hidden;
+  padding-bottom: 300px;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  margin-left: 270px;
+  margin-right: 270px;
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+}
+
+.menu-item {
+  margin-right: 100px;
+}
+
+.menu-item a {
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.menu-item a:hover {
+  border-bottom: 2px solid black;
+}
+
+.header-scroll {
+  background-color: white;
+}
+
+.header-scroll .menu-item a {
+  color: black;
+}
+
+.header-scroll .logo img {
+  filter: invert(1);
+}
+
+.btn-shop {
+  width: 50px;
+  height: 50px;
+}
+
+.btn-account {
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+}
+
+.breadcrumb {
+  display: flex;
+  list-style: none;
+  max-width: 1640px;
+  margin: 0 auto;
+}
+
+.breadcrumb li + li:before {
+  padding: 5px;
+  color: black;
+  content: ">";
+  font-size: 20px;
+}
+
+.breadcrumb-item a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+}
+
+.breadcrumb-item a:hover {
+  border-bottom: 1px solid black;
+}
+
+.main-title-post {
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  max-width: 734px;
+  padding-top: 40px;
+}
+
+.main-img-post {
+  padding-top: 50px;
+}
+
+.main-text-post {
+  font-size: 20px;
+  font-weight: 350;
+  letter-spacing: 0.4px;
+  padding-top: 50px;
+}
+
+.main-text-post:last-child {
+  margin-bottom: 200px;
+}
+
+footer {
+  border-top: 1px solid #000;
+  box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.footer-vk img {
+  width: 50px;
+}
+
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
