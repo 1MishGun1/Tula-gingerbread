@@ -18,7 +18,7 @@ btnCatalog.addEventListener("click", function () {
   window.open("shop.html");
 });
 
-const btnNews = document.querySelector(".btn-catalog");
-btnCatalog.addEventListener("click", function () {
-  window.open("shop.html");
+const btnNews = document.querySelector(".btn-news");
+btnNews.addEventListener("click", function () {
+  window.open("news.html");
 });
