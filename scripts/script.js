@@ -24,6 +24,12 @@ btnCatalog.addEventListener("click", function () {
   window.open("shop.html");
 });
 
+// Edit
+const btnPost = document.querySelector(".news-item-title");
+btnPost.addEventListener("click", function () {
+  window.open("post.html");
+});
+
 const btnNews = document.querySelector(".btn-news");
 btnNews.addEventListener("click", function () {
   window.open("news.html");
