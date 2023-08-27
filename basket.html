@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/basket.css" />
-    <title>Document</title>
+    <title>Корзина</title>
   </head>
   <body>
     <header class="header">
@@ -51,27 +51,66 @@
           <a href="#">Корзина</a>
         </li>
       </ol>
-      <div class="basket-content">
-        <div class="container">
-          <div class="basket-title">Корзина</div>
-          <div class="shop">
-            <div class="product">
-              <div class="basket-product-confirmation">
-                <input type="checkbox" />
-              </div>
-              <div class="basket-product-img">
+      <div class="container">
+        <div class="basket-title">Корзина</div>
+      </div>
+
+      <div class="small-container cart-page">
+        <table>
+          <tr>
+            <th>Название</th>
+            <th>Количество</th>
+            <th>Цена</th>
+          </tr>
+          <tr>
+            <td>
+              <div class="basket-product-info">
                 <img src="img/fir_gingerbread_box.png" alt="fir" />
+                <div>
+                  <p>Тульский пряник “Елка”</p>
+                  <a href="#" class="basket-product-remove">Удалить</a>
+                </div>
               </div>
-              <div class="basket-product-title">Тульский пряник “Елка”</div>
-              <div class="basket-product-extra">
-                <button class="btn-minus">-</button>
-                <span class="quantity">1</span>
-                <button class="btn-plus">+</button>
-                <div class="basket-product-delete">Удалить</div>
+            </td>
+            <td><input type="number" value="1" /></td>
+            <td class="basket-product-price">1000 ₽</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="basket-product-info">
+                <img
+                  src="img/round_gingerbread_basket.png"
+                  alt="round"
+                  width="150px"
+                />
+                <div>
+                  <p>Тульский пряник “Деньга”</p>
+                  <a href="#" class="basket-product-remove">Удалить</a>
+                </div>
               </div>
-              <div class="basket-product-price">1000 ₽</div>
-            </div>
-          </div>
+            </td>
+            <td><input type="number" value="1" /></td>
+            <td class="basket-product-price">1000 ₽</td>
+          </tr>
+        </table>
+
+        <div class="basket-product-total-price">
+          <table class="basket-product-total-price">
+            <tr class="basket-product-total-price-title">
+              <td>Ваша корзина</td>
+            </tr>
+            <tr class="basket-product-quantity">
+              <td>2 товара</td>
+              <td>1000 ₽</td>
+            </tr>
+            <tr class="basket-product-result">
+              <td>Итого:</td>
+              <td>2000 ₽</td>
+            </tr>
+            <tr>
+              <td colspan="2"><button class="puy">Оплатить заказ</button></td>
+            </tr>
+          </table>
         </div>
       </div>
     </main>
