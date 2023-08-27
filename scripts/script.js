@@ -13,6 +13,12 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
+// Edit
+const btnPayIndex = document.querySelector(".product-button");
+btnPayIndex.addEventListener("click", function () {
+  window.open("product.html");
+});
+
 const btnCatalog = document.querySelector(".btn-catalog");
 btnCatalog.addEventListener("click", function () {
   window.open("shop.html");
