@@ -121,6 +121,10 @@ body {
   border-bottom: 1px solid black;
 }
 
+#main {
+  padding-bottom: 200px;
+}
+
 .basket-title {
   font-family: Lora;
   font-size: 64px;
@@ -130,75 +134,136 @@ body {
   margin-bottom: 40px;
 }
 
-.small-container {
-  max-width: 1640px;
-  margin: 0 auto;
-}
-
-.cart-page {
-  margin: 40px auto;
-}
-
-table {
-  width: 1155px;
-  border-collapse: collapse;
-}
-
-.basket-product-info {
+.basket-product {
   display: flex;
-  flex-wrap: wrap;
-  margin-top: 15px;
 }
 
-.basket-product-info img {
-  margin-right: 60px;
-  margin-top: 10px;
+.shop-product {
+  flex: 75%;
 }
 
-.basket-product-price {
-  font-family: Inter;
-  font-size: 28px;
-  font-weight: 700;
-  letter-spacing: 0.64px;
+.basket-item {
+  display: flex;
+  width: 100%;
+  height: 265px;
+  margin-bottom: 30px;
+  /* border: 1px solid white; */
+  transition: all 0.6s ease;
 }
 
-th {
-  text-align: left;
-  padding: 10px;
+.basket-item:hover {
+  transform: scale(1.02);
+  background-color: #d09661;
   color: white;
-  background-color: #c2723a;
+  border-radius: 15px;
 }
 
-td {
-  padding: 10px 15px;
+.basket-product-text {
+  padding: 20px;
+  position: relative;
+  width: 100%;
 }
 
-td p {
-  width: 274px;
-  color: #000;
+.product-name {
+  font-family: Segoe UI;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0.64px;
+  margin-bottom: 30px;
+}
+
+.product-price {
   font-family: Segoe UI;
   font-size: 28px;
   font-weight: 600;
   letter-spacing: 0.64px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
-td input {
-  width: 50px;
-  height: 50px;
-  padding: 5px;
+.product-quantity {
+  font-family: Segoe UI;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.64px;
+  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
-td a {
-  color: #929292;
-  font-family: Inter;
+.product-quantity input {
+  width: 30px;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.product-item-button button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 25px;
+  background-color: rgba(78, 124, 128, 1);
+  color: white;
   font-size: 18px;
-  font-weight: 300;
-  letter-spacing: 0.48px;
-  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 10px;
 }
 
-.basket-product-total-price table {
-  width: 277px;
+.product-item-button button:hover {
+  background-color: white;
+  color: black;
+  transition: 0.3s ease-in-out;
+}
+
+.basket-right-bar {
+  flex: 25%;
+  margin-left: 40px;
+  padding: 20px;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.basket-right-bar-title {
+  font-family: Segoe UI;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  margin-bottom: 30px;
+}
+
+.basket-right-bar p {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.btn-puy {
+  width: 100%;
+  height: 60px;
+  font-size: 24px;
+  border-radius: 15px;
+  background-color: white;
+  border: 1px solid #d09661;
+}
+
+.btn-puy:hover {
+  background-color: #d09661;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+footer {
+  border-top: 1px solid #000;
+  box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.footer-vk img {
+  width: 50px;
+}
+
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
