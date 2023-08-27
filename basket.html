@@ -34,12 +34,7 @@
           src="img/shopping-basket.png"
           alt="shop"
         />
-        <input
-          class="btn-account"
-          type="image"
-          src="img/account.png"
-          alt="shop"
-        />
+        <input class="btn-account" type="image" src="img/user.png" alt="shop" />
       </div>
     </header>
 
@@ -53,69 +48,43 @@
       </ol>
       <div class="container">
         <div class="basket-title">Корзина</div>
-      </div>
-
-      <div class="small-container cart-page">
-        <table>
-          <tr>
-            <th>Название</th>
-            <th>Количество</th>
-            <th>Цена</th>
-          </tr>
-          <tr>
-            <td>
-              <div class="basket-product-info">
-                <img src="img/fir_gingerbread_box.png" alt="fir" />
-                <div>
-                  <p>Тульский пряник “Елка”</p>
-                  <a href="#" class="basket-product-remove">Удалить</a>
+        <div class="basket-product">
+          <div class="shop-product">
+            <div class="basket-item">
+              <img src="img/round_gingerbread_basket.png" alt="round" />
+              <div class="basket-product-text">
+                <div class="product-name">Тульский пряник “Елка”</div>
+                <div class="product-price">1000 ₽</div>
+                <div class="product-quantity">Кол-во: <input value="1" /></div>
+                <div class="product-item-button">
+                  <button class="btn-remove">Удалить</button>
                 </div>
               </div>
-            </td>
-            <td><input type="number" value="1" /></td>
-            <td class="basket-product-price">1000 ₽</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="basket-product-info">
-                <img
-                  src="img/round_gingerbread_basket.png"
-                  alt="round"
-                  width="150px"
-                />
-                <div>
-                  <p>Тульский пряник “Деньга”</p>
-                  <a href="#" class="basket-product-remove">Удалить</a>
+            </div>
+            <div class="basket-item">
+              <img src="img/round_gingerbread_basket.png" alt="round" />
+              <div class="basket-product-text">
+                <div class="product-name">Тульский пряник “Елка”</div>
+                <div class="product-price">1000 ₽</div>
+                <div class="product-quantity">Кол-во: <input value="1" /></div>
+                <div class="product-item-button">
+                  <button class="btn-remove">Удалить</button>
                 </div>
               </div>
-            </td>
-            <td><input type="number" value="1" /></td>
-            <td class="basket-product-price">1000 ₽</td>
-          </tr>
-        </table>
+            </div>
+          </div>
 
-        <div class="basket-product-total-price">
-          <table class="basket-product-total-price">
-            <tr class="basket-product-total-price-title">
-              <td>Ваша корзина</td>
-            </tr>
-            <tr class="basket-product-quantity">
-              <td>2 товара</td>
-              <td>1000 ₽</td>
-            </tr>
-            <tr class="basket-product-result">
-              <td>Итого:</td>
-              <td>2000 ₽</td>
-            </tr>
-            <tr>
-              <td colspan="2"><button class="puy">Оплатить заказ</button></td>
-            </tr>
-          </table>
+          <div class="basket-right-bar">
+            <div class="basket-right-bar-title">Ваш заказ</div>
+            <p><span>2 товара</span> <span>1000 ₽</span></p>
+            <p><span>Итого</span> <span>2000 ₽</span></p>
+            <button class="btn-puy">Оформить заказ</button>
+          </div>
         </div>
       </div>
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="logo-footer">
           <img src="img/Logo_Tula gingerbread.svg" alt="logo" />
@@ -125,6 +94,6 @@
         </div>
         <div class="rights">Все права защищены</div>
       </div>
-    </footer> -->
+    </footer>
   </body>
 </html>
