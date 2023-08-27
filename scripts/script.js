@@ -12,3 +12,8 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     this.classList.add("scroll-active");
   });
 });
+
+const btnCatalog = document.querySelector(".btn-catalog");
+btnCatalog.addEventListener("click", function () {
+  window.open("shop.html");
+});
