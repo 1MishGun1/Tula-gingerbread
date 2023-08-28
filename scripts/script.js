@@ -13,8 +13,8 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-const btnPost = document.querySelectorAll(".news-item-title");
-const btnPayIndex = document.querySelector(".product-button");
+const btnPost = document.querySelectorAll(".news-item");
+const btnPayIndex = document.querySelectorAll(".product-button");
 
 // Post
 btnPayIndex.addEventListener("click", function () {
