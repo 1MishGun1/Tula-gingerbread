@@ -26,9 +26,15 @@ btnCatalog.addEventListener("click", function () {
 
 // Edit
 const btnPost = document.querySelector(".news-item-title");
-btnPost.addEventListener("click", function () {
-  window.open("post.html");
-});
+// btnPost.addEventListener("click", function () {
+//   window.open("post.html");
+// });
+
+for (let i = 0; i < btnPost.length; i++) {
+  btnPost.addEventListener("click", function () {
+    window.open("post.html");
+  });
+}
 
 const btnNews = document.querySelector(".btn-news");
 btnNews.addEventListener("click", function () {
