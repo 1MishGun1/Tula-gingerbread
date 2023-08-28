@@ -14,34 +14,8 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 const btnPost = document.querySelectorAll(".news-item");
-const btnPayIndex = document.querySelectorAll(".product-button");
+const btnPayIndex = document.querySelectorAll(".button");
 
-// Post
 btnPayIndex.addEventListener("click", function () {
   window.open("product.html");
-});
-
-const btnCatalog = document.querySelector(".btn-catalog");
-btnCatalog.addEventListener("click", function () {
-  window.open("shop.html");
-});
-
-const openLinksNews = function () {
-  window.open("news.html");
-};
-
-// Edit
-for (let i = 0; i < btnPost.length; i++) {
-  btnPost[i].addEventListener("click", openLinksNews);
-}
-
-for (let i = 0; i < btnPost.length; i++) {
-  btnPost.addEventListener("click", function () {
-    window.open("post.html");
-  });
-}
-
-const btnNews = document.querySelector(".btn-news");
-btnNews.addEventListener("click", function () {
-  window.open("news.html");
 });
