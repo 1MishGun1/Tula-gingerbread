@@ -13,8 +13,10 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// Edit
+const btnPost = document.querySelector(".news-item-title");
 const btnPayIndex = document.querySelector(".product-button");
+
+// Edit
 btnPayIndex.addEventListener("click", function () {
   window.open("product.html");
 });
@@ -24,11 +26,14 @@ btnCatalog.addEventListener("click", function () {
   window.open("shop.html");
 });
 
+const openLinksNews = function () {
+  window.open("news.html");
+};
+
 // Edit
-const btnPost = document.querySelector(".news-item-title");
-// btnPost.addEventListener("click", function () {
-//   window.open("post.html");
-// });
+for (let i = 0; i < btnPost.length; i++) {
+  btnPost[i].addEventListener("click", openLinksNews);
+}
 
 for (let i = 0; i < btnPost.length; i++) {
   btnPost.addEventListener("click", function () {
