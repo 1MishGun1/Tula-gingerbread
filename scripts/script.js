@@ -14,7 +14,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 const btnPost = document.querySelectorAll(".news-item");
-const btnPayIndex = document.querySelectorAll(".button");
+const btnPayIndex = document.querySelectorAll(".news-item-title");
 
 btnPayIndex.addEventListener("click", function () {
   window.open("product.html");
