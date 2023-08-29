@@ -18,6 +18,10 @@ const btnOpenCatalog = document.querySelectorAll(".btn-catalog");
 const btnPost = document.querySelectorAll(".news-item");
 const btnOpenNews = document.querySelectorAll(".btn-news");
 
-btnPost.addEventListener("click", function () {
+const openPageProduct = function () {
   window.open("product.html");
-});
+};
+
+for (let i = 0; i < btnPayProduct.length; i++) {
+  btnPayProduct[i].addEventListener("click", openPageProduct);
+}
