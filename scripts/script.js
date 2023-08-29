@@ -13,9 +13,11 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
+const btnPayProduct = document.querySelectorAll(".product-button");
+const btnOpenCatalog = document.querySelectorAll(".btn-catalog");
 const btnPost = document.querySelectorAll(".news-item");
-const btnPayIndex = document.querySelectorAll(".news-item-title");
+const btnOpenNews = document.querySelectorAll(".btn-news");
 
-btnPayIndex.addEventListener("click", function () {
+btnPost.addEventListener("click", function () {
   window.open("product.html");
 });
