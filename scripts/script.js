@@ -13,7 +13,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-const btnPayProduct = document.querySelectorAll(".product-button");
+const btnProduct = document.querySelectorAll(".products-item");
 const btnOpenCatalog = document.querySelector(".btn-catalog");
 const btnPost = document.querySelectorAll(".news-item");
 const btnOpenNews = document.querySelector(".btn-news");
@@ -21,8 +21,8 @@ const btnOpenNews = document.querySelector(".btn-news");
 const openPageProduct = function () {
   window.open("product.html");
 };
-for (let i = 0; i < btnPayProduct.length; i++) {
-  btnPayProduct[i].addEventListener("click", openPageProduct);
+for (let i = 0; i < btnProduct.length; i++) {
+  btnProduct[i].addEventListener("click", openPageProduct);
 }
 
 btnOpenCatalog.addEventListener("click", function () {
