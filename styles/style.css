@@ -165,7 +165,7 @@ body {
   text-transform: uppercase;
 }
 
-.products-items {
+/* .products-items {
   display: grid;
   grid-template-columns: repeat(3, 500px);
   gap: 20px;
@@ -267,6 +267,21 @@ body {
   line-height: normal;
   letter-spacing: 1.2px;
   text-transform: uppercase;
+} */
+
+.slide-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.item-product-img {
+  height: 350px;
+}
+
+.item-product-img img {
+  height: 350px;
 }
 
 .reviews {
