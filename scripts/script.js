@@ -37,5 +37,5 @@ for (let i = 0; i < btnPost.length; i++) {
 }
 
 btnOpenNews.addEventListener("click", function () {
-  window.open("shop.html");
+  window.open("news.html");
 });
