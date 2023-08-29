@@ -1,5 +1,4 @@
 const btnlogo = document.querySelector(".logo");
-
 const btnProductItem = document.querySelectorAll(".catalog-item");
 
 btnlogo.addEventListener("click", function () {
