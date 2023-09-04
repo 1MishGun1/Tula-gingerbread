@@ -353,54 +353,6 @@ body {
   text-align: left;
 }
 
-/* .reviews-box {
-  display: flex;
-  justify-content: center;
-  gap: 110px;
-}
-
-.reviews-image img {
-  width: 172px;
-}
-
-.reviews-text {
-  width: 671px;
-  font-size: 20px;
-  font-weight: 350;
-  letter-spacing: 0.4px;
-}
-
-.reviews-text p {
-  padding-bottom: 20px;
-}
-
-.reviews-title-people {
-  font-size: 28px;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.56px;
-  order: 2;
-}
-
-.btn-left,
-.btn-right {
-  width: 50px;
-  position: absolute;
-}
-
-.btn-left {
-  left: 0;
-}
-
-.btn-right {
-  right: 0;
-}
-
-.btn-arrows {
-  display: flex;
-  align-items: center;
-} */
-
 .news {
   padding-bottom: 200px;
 }
