@@ -23,8 +23,17 @@ body {
 .header {
   padding: 40px 0;
   position: fixed;
+  background-color: white;
   left: 140px;
   z-index: 99;
+  display: none;
+  transition: display 0.5s ease; /* добавляем плавный переход */
+}
+
+#header {
+  width: 100%;
+  left: 0;
+  top: 0;
 }
 
 .container {
@@ -297,7 +306,54 @@ body {
   padding-bottom: 40px;
 }
 
-.reviews-box {
+.reviews-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1640px;
+}
+
+/* .reviews-item {
+  box-shadow: 7px 7px 7px #ddd;
+} */
+
+.reviews-item-img {
+  text-align: center;
+}
+
+.reviews-item-img img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.reviews-item-content,
+.reviews-line {
+  text-align: center;
+}
+
+.reviews-item-name-autor {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 25px;
+  padding: 15px 0;
+}
+
+.reviews-line {
+  padding-bottom: 15px;
+}
+
+.reviews-line hr {
+  width: 25%;
+  margin: 0 auto;
+  height: 1px;
+  color: #ddd;
+}
+
+.reviews-item-coment {
+  max-width: 400px;
+  font-size: 20px;
+  text-align: left;
+}
+
+/* .reviews-box {
   display: flex;
   justify-content: center;
   gap: 110px;
@@ -343,7 +399,7 @@ body {
 .btn-arrows {
   display: flex;
   align-items: center;
-}
+} */
 
 .news {
   padding-bottom: 200px;
