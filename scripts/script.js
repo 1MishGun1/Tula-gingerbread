@@ -1,10 +1,20 @@
 //TODO Scroll
+// var prevScrollpos = window.pageYOffset;
 
+// window.onscroll = function () {
+//   var currentScrollPos = window.pageYOffset;
+//   if (prevScrollpos > currentScrollPos) {
+//     document.getElementById("header").classList.add("visible");
+//   } else {
+//     document.getElementById("header").classList.remove("visible");
+//   }
+//   prevScrollpos = currentScrollPos;
+// };
 //TODO Slider_Catalog
 
 //TODO Buttons
 const btnProduct = document.querySelectorAll(".products-item");
-// const btnOpenCatalog = document.querySelector(".btn-catalog");
+const btnOpenCatalog = document.querySelector(".btn-catalog");
 const btnPost = document.querySelectorAll(".news-item");
 const btnOpenNews = document.querySelector(".btn-news");
 const btnOpenShop = document.querySelector(".btn-shop");
@@ -20,9 +30,9 @@ for (let i = 0; i < btnProduct.length; i++) {
   btnProduct[i].addEventListener("click", openPageProduct);
 }
 
-// btnOpenCatalog.addEventListener("click", function () {
-//   window.open("shop.html");
-// });
+btnOpenCatalog.addEventListener("click", function () {
+  window.open("shop.html");
+});
 
 const openCatalog = function () {
   window.open("post.html");
