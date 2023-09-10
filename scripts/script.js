@@ -16,11 +16,16 @@ const slidesShow = 3;
 const slidesScroll = 1;
 const container = document.querySelector("slider-container");
 const track = document.querySelector(".slider-track");
+const items = document.querySelectorAll("slider-item");
 const btnPrev = document.querySelector(".btn-prev");
 const btnNext = document.querySelector(".btn-next");
 const countItem = item.length;
 const itemWidth = container.clientWidth / slidesShow;
 const movePosition = slidesScroll * itemWidth;
+
+items.forEach((item) => {
+  item.style.minWidth = `${itemWidth}px`;
+});
 
 //TODO Buttons
 const btnProduct = document.querySelectorAll(".products-item");
