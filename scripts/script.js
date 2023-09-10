@@ -1,15 +1,16 @@
 //TODO Scroll
-// let prevScrollpos = window.pageYOffset;
+let prevScrollpos = window.pageYOffset;
 
-// window.onscroll = function () {
-//   let currentScrollPos = window.pageYOffset;
-//   if (prevScrollpos > currentScrollPos) {
-//     document.getElementById("header").classList.add("visible");
-//   } else {
-//     document.getElementById("header").classList.remove("visible");
-//   }
-//   prevScrollpos = currentScrollPos;
-// };
+window.onscroll = function () {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos < currentScrollPos) {
+    document.getElementById("header").classList.add("visible");
+  } else {
+    document.getElementById("header").classList.remove("visible");
+  }
+  prevScrollpos = currentScrollPos;
+};
+
 //TODO Slider_Catalog
 let position = 0;
 const slidesShow = 3;
