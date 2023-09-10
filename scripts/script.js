@@ -1,8 +1,8 @@
 //TODO Scroll
-// var prevScrollpos = window.pageYOffset;
+// let prevScrollpos = window.pageYOffset;
 
 // window.onscroll = function () {
-//   var currentScrollPos = window.pageYOffset;
+//   let currentScrollPos = window.pageYOffset;
 //   if (prevScrollpos > currentScrollPos) {
 //     document.getElementById("header").classList.add("visible");
 //   } else {
@@ -17,22 +17,10 @@ const btnProduct = document.querySelectorAll(".products-item");
 const btnOpenCatalog = document.querySelector(".btn-catalog");
 const btnPost = document.querySelectorAll(".news-item");
 const btnOpenNews = document.querySelector(".btn-news");
-const btnOpenShop = document.querySelector(".btn-shop");
-
-btnOpenShop.addEventListener("click", function () {
-  window.open("basket.html");
-});
 
 const openPageProduct = function () {
   window.open("product.html");
 };
-for (let i = 0; i < btnProduct.length; i++) {
-  btnProduct[i].addEventListener("click", openPageProduct);
-}
-
-btnOpenCatalog.addEventListener("click", function () {
-  window.open("shop.html");
-});
 
 const openCatalog = function () {
   window.open("post.html");
