@@ -11,6 +11,16 @@
 //   prevScrollpos = currentScrollPos;
 // };
 //TODO Slider_Catalog
+let position = 0;
+const slidesShow = 3;
+const slidesScroll = 1;
+const container = document.querySelector("slider-container");
+const track = document.querySelector(".slider-track");
+const btnPrev = document.querySelector(".btn-prev");
+const btnNext = document.querySelector(".btn-next");
+const countItem = item.length;
+const itemWidth = container.clientWidth / slidesShow;
+const movePosition = slidesScroll * itemWidth;
 
 //TODO Buttons
 const btnProduct = document.querySelectorAll(".products-item");
