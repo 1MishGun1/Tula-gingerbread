@@ -26,7 +26,7 @@ body {
   background-color: white;
   left: 140px;
   z-index: 99;
-  /* display: none; */
+  display: none;
   transition: display 0.5s ease; /* добавляем плавный переход */
 }
 
@@ -34,6 +34,10 @@ body {
   width: 100%;
   left: 0;
   top: 0;
+}
+
+.visible {
+  display: block !important;
 }
 
 .container {
