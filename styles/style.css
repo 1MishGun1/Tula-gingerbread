@@ -84,15 +84,27 @@ body {
   border-bottom: 2px solid black;
 }
 
+.btn-basket-user {
+  display: flex;
+  gap: 20px;
+}
+
 .btn-shop {
+  display: inline-block;
+  background-image: url(../img/shopping-basket.png);
+  background-size: cover;
+  background-position: center center;
   width: 50px;
   height: 50px;
 }
 
 .btn-account {
+  display: inline-block;
+  background-image: url(../img/user.png);
+  background-size: cover;
+  background-position: center center;
   width: 50px;
   height: 50px;
-  margin-left: 20px;
 }
 
 .main-content {
