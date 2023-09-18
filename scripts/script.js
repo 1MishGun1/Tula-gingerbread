@@ -55,7 +55,7 @@ window.onscroll = function () {
 // };
 // checkBtns();
 
-var swiper = new Swiper(".slider-container", {
+let swiper = new Swiper(".slider-container", {
   slidesPerView: 3,
   spaceBetween: 30,
   slidesPerGroup: 3,
