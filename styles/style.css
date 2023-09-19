@@ -188,7 +188,6 @@ body {
 
 .slider-track {
   display: flex;
-  /* gap: 1px; */
   margin-top: 40px;
   margin-bottom: 80px;
 }
@@ -308,10 +307,6 @@ body {
   max-width: 1640px;
 }
 
-/* .reviews-item {
-  box-shadow: 7px 7px 7px #ddd;
-} */
-
 .reviews-item-img {
   text-align: center;
 }
@@ -406,6 +401,7 @@ body {
   border-radius: 15px;
   border: 2px solid black;
   background-color: white;
+  text-decoration: none;
 }
 
 .btn-news:hover {
