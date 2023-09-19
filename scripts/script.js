@@ -32,7 +32,6 @@ let swiper = new Swiper(".slider-container", {
 const btnProduct = document.querySelectorAll(".products-item");
 const btnOpenCatalog = document.querySelector(".btn-catalog");
 const btnPost = document.querySelectorAll(".news-item");
-const btnOpenNews = document.querySelector(".btn-news");
 
 const openPageProduct = function () {
   window.open("product.html");
@@ -44,7 +43,3 @@ const openCatalog = function () {
 for (let i = 0; i < btnPost.length; i++) {
   btnPost[i].addEventListener("click", openCatalog);
 }
-
-btnOpenNews.addEventListener("click", function () {
-  window.open("news.html");
-});
